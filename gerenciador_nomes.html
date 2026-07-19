@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gerenciador_nomes.css">
+    <title>Gerenciador de Nomes</title>
+</head>
+<body>
+    <header><h1>Gerenciador de Nomes</h1></header>
+
+    <section>
+        <div>
+            <label for="txtNome">Adicionar Nome:</label>
+            <input type="text" id="txtNome">
+            <button type="button" id="btnAdicionar">Adicionar</button>
+        </div>
+
+        <div>
+            <p>Nomes cadastrados</p>
+            <ul id="listaNomes"></ul>
+        </div>
+
+        <div class="ferramentas">
+            <div>
+                <label for="txtFiltro">Filtrar por letra:</label>
+                <input type="text" id="txtFiltro" maxlength="1">
+                <button type="button" id="btnFiltrar">Filtrar</button>
+            </div>
+
+            <div>
+                <label for="txtBusca">Buscar nome:</label>
+                <input type="text" id="txtBusca">
+                <button type="button" id="btnBuscar">Buscar</button>
+            </div>
+
+            <div>
+                <button type="button" id="btnMaiusculo">Ver em Maiúsculo</button>
+                <button type="button" id="btnVerificar">Verificar se tem mais de 3 letras</button>
+            </div>
+        </div>
+
+        <div>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <script src="gerenciador_nomes.js"></script>
+</body>
+</html>
+
+
